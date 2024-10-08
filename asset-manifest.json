@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/podium-landing/static/css/main.e5450050.css",
+    "main.js": "/podium-landing/static/js/main.84160aab.js",
+    "static/js/453.c156d491.chunk.js": "/podium-landing/static/js/453.c156d491.chunk.js",
+    "index.html": "/podium-landing/index.html",
+    "main.e5450050.css.map": "/podium-landing/static/css/main.e5450050.css.map",
+    "main.84160aab.js.map": "/podium-landing/static/js/main.84160aab.js.map",
+    "453.c156d491.chunk.js.map": "/podium-landing/static/js/453.c156d491.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5450050.css",
+    "static/js/main.84160aab.js"
+  ]
+}

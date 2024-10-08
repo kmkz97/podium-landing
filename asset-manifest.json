@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/podium-landing/static/css/main.e5450050.css",
-    "main.js": "/podium-landing/static/js/main.84160aab.js",
+    "main.css": "/podium-landing/static/css/main.f2a339b2.css",
+    "main.js": "/podium-landing/static/js/main.ec7c5398.js",
     "static/js/453.c156d491.chunk.js": "/podium-landing/static/js/453.c156d491.chunk.js",
     "index.html": "/podium-landing/index.html",
-    "main.e5450050.css.map": "/podium-landing/static/css/main.e5450050.css.map",
-    "main.84160aab.js.map": "/podium-landing/static/js/main.84160aab.js.map",
+    "main.f2a339b2.css.map": "/podium-landing/static/css/main.f2a339b2.css.map",
+    "main.ec7c5398.js.map": "/podium-landing/static/js/main.ec7c5398.js.map",
     "453.c156d491.chunk.js.map": "/podium-landing/static/js/453.c156d491.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5450050.css",
-    "static/js/main.84160aab.js"
+    "static/css/main.f2a339b2.css",
+    "static/js/main.ec7c5398.js"
   ]
 }

@@ -9,7 +9,7 @@ const Testimonials2 = () => {
         <section className="Testimonials">
             <div className="flex flex-col items-center justify-center text-center my-8 p-8">
                 <p className='mt-8 text-sm md:text-base font-medium text-gray-400'>{t('CUSTOMER TESTIMONIALS')}</p>
-                <h2 className='mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-black'>{t('More praise from our fans')}</h2>
+                <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('More praise from our fans')}</h2>
                 <p className='mt-4 text-xl font-light text-gray-600'>{t('Creators and agencies love Podium—you will too.')}</p>
             </div>
             <div className="flex w-full items-center justify-center px-16 pb-16 max-w-6xl mx-auto">

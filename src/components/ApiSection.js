@@ -15,7 +15,7 @@ const ApiSection = () => {
         <p className="mt-8 text-sm md:text-base lg:text-lg font-medium text-gray-300">
           {t('PODIUM FOR BUSINESSES')}
         </p>
-        <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+        <h2 className="mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-white">
           {t('Deliver cutting edge')} <br /> {t('features in your')} <br /> {t('applications')}
         </h2>
         <p className="mt-6 text-xl font-light text-gray-200">

@@ -68,7 +68,7 @@ const Features = () => {
       <section className='Features'>
         <div className='flex flex-col w-full items-center text-center p-8 justify-center'>
             <p className='mt-8 text-sm md:text-base font-medium text-gray-400'>{t('YOUR NEW SUPERTOOLS')}</p>
-            <h2 className='mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-black'>{t('Do more in less time')}</h2>
+            <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('Do more in less time')}</h2>
             <p className='mt-4 text-xl font-light text-gray-600'>{t('Save hours of time and hundreds (or thousands) of dollars while reaching new fans.')}</p>
         </div>
         <div className='flex w-full items-center justify-center px-16 py-8 max-w-5xl mx-auto'>

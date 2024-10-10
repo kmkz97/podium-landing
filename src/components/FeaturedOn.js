@@ -7,7 +7,7 @@ const FeaturedOn = () => {
     return (
       <section className='FeaturedOn'>
         <div className='flex flex-col my-12 w-full items-center justify-center px-16 py-8 text-center'>
-            <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-black'>{t('Proudly featured on')}</h2>
+            <h2 className='text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('Proudly featured on')}</h2>
             <div className='mt-12 flex w-full flex-wrap items-center justify-center max-w-5xl gap-12'>
                 <svg width="195" height="46" viewBox="0 0 512 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_10463_2946)">

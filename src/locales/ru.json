@@ -132,5 +132,17 @@
     "$9.00 for Non-Subscribers": "$9,00 для неподписчиков",
     "Buy Credits": "Купить кредиты",
     "← Back to Dashboard": "← Назад к панели управления",
-    "Choose your plan": "Выберите ваш план"
+    "Choose your plan": "Выберите ваш план",
+    "Conversational AI tuned for your audio.": "Разговорный ИИ, настроенный для вашего аудио.",
+    "Scale your audio processing pipeline using Podium's API": "Масштабируйте свою аудиопроизводственную линию, используя API Podium.",
+    "Who is API access for?": "Для кого доступ к API?",
+    "API access is for you if you're building an app that requires Podium features, or have some other reason for using Podium in a programmatic way.": "Доступ к API предназначен для вас, если вы создаете приложение, требующее функций Podium, или по другой причине используете Podium программным способом.",
+    "Are there any other languages available other than English?": "Есть ли другие языки, кроме английского?",
+    "Podium can process and generate content in over 90 languages.": "Podium может обрабатывать и генерировать контент на более чем 90 языках.",
+    "Click here": "Нажмите здесь",
+    "to talk to us about API pricing.": "чтобы поговорить с нами о цене API.",
+    "Products": "Продукты",
+    "Compare": "Сравнить",
+    "Company": "Компания",
+    "Support": "Поддержка"
 }

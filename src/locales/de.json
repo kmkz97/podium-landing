@@ -132,5 +132,17 @@
     "$9.00 for Non-Subscribers": "$9,00 für Nicht-Abonnenten",
     "Buy Credits": "Credits kaufen",
     "← Back to Dashboard": "← Zurück zum Dashboard",
-    "Choose your plan": "Wähle deinen Plan"
+    "Choose your plan": "Wähle deinen Plan",
+    "Conversational AI tuned for your audio.": "Konversationelle KI abgestimmt auf Ihr Audio.",
+    "Scale your audio processing pipeline using Podium's API": "Skalieren Sie Ihre Audiobearbeitungs-Pipeline mit der Podium-API.",
+    "Who is API access for?": "Für wen ist der API-Zugang?",
+    "API access is for you if you're building an app that requires Podium features, or have some other reason for using Podium in a programmatic way.": "Der API-Zugang ist für Sie, wenn Sie eine App entwickeln, die Podium-Funktionen benötigt, oder wenn Sie Podium aus einem anderen Grund programmatisch verwenden möchten.",
+    "Are there any other languages available other than English?": "Sind außer Englisch noch andere Sprachen verfügbar?",
+    "Podium can process and generate content in over 90 languages.": "Podium kann Inhalte in über 90 Sprachen verarbeiten und generieren.",
+    "Click here": "Klicken Sie hier",
+    "to talk to us about API pricing.": "um mit uns über API-Preise zu sprechen.",
+    "Products": "Produkte",
+    "Compare": "Vergleichen",
+    "Company": "Unternehmen",
+    "Support": "Support"
 }

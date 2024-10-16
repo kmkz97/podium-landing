@@ -17,7 +17,7 @@ const FAQ = () => {
         <>
           {t('Podium has multiple plans to fit your needs and volume. Visit our')}{' '}
           <a
-            href="https://hello.podium.page/pricing"
+            href="/pricing"
             className="text-black underline"
             target="_blank"
             rel="noopener noreferrer"

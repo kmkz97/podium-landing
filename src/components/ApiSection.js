@@ -13,13 +13,13 @@ const ApiSection = () => {
         }}
       >
         <p className="mt-8 text-sm md:text-base lg:text-lg font-medium text-gray-300">
-          {t('PODIUM FOR BUSINESSES')}
+          {t('LONGFORMER FOR BUSINESSES')}
         </p>
         <h2 className="mt-4 max-w-3xl text-3xl md:text-5xl lg:text-6xl font-bold text-white">
           {t('Deliver cutting edge features in your applications')}
         </h2>
         <p className="mt-6 text-xl font-light text-gray-200">
-          {t('Get instant access to Podium API.')}
+          {t('Get instant access to Longformer API.')}
         </p>
         <button className='my-12 flex h-12 w-full sm:w-fit sm:px-8 bg-white text-black font-medium text-xl rounded-lg shadow items-center justify-center' onClick={() => window.location.href = 'https://podium.page/create-account'}>{t('Try it now! →')}</button>
       </div>

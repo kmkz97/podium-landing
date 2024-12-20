@@ -130,13 +130,13 @@ export default function PricingPage() {
                                     <p className="text-4xl font-semibold">{t("Free to start")}</p>
                                     <div className="text-gray-600 text-center mt-4">
                                         <p>{t("3 hours free.")}</p>
-                                        <p>{t("Take Podium for a test spin!")}</p>
+                                        <p>{t("Take Longformer for a test spin!")}</p>
                                     </div>
                                 </div>
                             }
                         >
                             <ul className="p-4 mt-8 list-disc">
-                                <li>{t("Try out all of Podium's features (see Creator plan) in a free trial.")}</li>
+                                <li>{t("Try out all of Longformer's features (see Creator plan) in a free trial.")}</li>
                                 <li>{t("3 free audio hours")}</li>
                             </ul>
                         </PlanModule>

@@ -10,7 +10,7 @@ const Testimonials2 = () => {
             <div className="flex flex-col items-center justify-center text-center my-8 p-8">
                 <p className='mt-8 text-sm md:text-base font-medium text-gray-400'>{t('CUSTOMER TESTIMONIALS')}</p>
                 <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('More praise from our fans')}</h2>
-                <p className='mt-4 text-xl font-light text-gray-600'>{t('Creators and agencies love Podium—you will too.')}</p>
+                <p className='mt-4 text-xl font-light text-gray-600'>{t('Creators and agencies love Longformer—you will too.')}</p>
             </div>
             <div className="flex w-full items-center justify-center px-16 pb-16 max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -27,7 +27,7 @@ const Testimonials2 = () => {
                     />
                 </div>
                 <div className="bg-gray-50 h-fit rounded-lg p-6 flex flex-col w-full max-w-sm">
-                    <p className="mt-2 text-lg text-gray-600 font-light">{t('I am a huge fan of Podium and tell everyone about it!')}</p>
+                    <p className="mt-2 text-lg text-gray-600 font-light">{t('I am a huge fan of Longformer and tell everyone about it!')}</p>
                     <h3 className="mt-4 text-lg font-medium text-black">Jesse Ulrich</h3>
                     <p className="text-gray-400 text-lg font-medium">
                       Rant9 Productions

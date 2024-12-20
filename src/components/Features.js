@@ -65,13 +65,13 @@ const Features = () => {
   const { t } = useTranslation();
 
     return (
-      <section className='Features'>
+      <section className='Features bg-white rounded-tr-[78px]'>
         <div className='flex flex-col w-full items-center text-center p-8 justify-center'>
             <p className='mt-8 text-sm md:text-base font-medium text-gray-400'>{t('YOUR NEW SUPERTOOLS')}</p>
             <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('Do more in less time')}</h2>
             <p className='mt-4 text-xl font-light text-gray-600'>{t('Save hours of time and hundreds (or thousands) of dollars while reaching new fans.')}</p>
         </div>
-        <div className='flex w-full items-center justify-center px-16 py-8 max-w-5xl mx-auto'>
+        <div className='flex w-full items-center justify-center px-4 py-8 max-w-5xl mx-auto'>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {featuresList.map((feature, index) => (
                 <div key={index} className="bg-white shadow-md border border-gray-200 rounded-lg p-6 flex flex-col w-full max-w-sm">

@@ -1,0 +1,82 @@
+import React, { useEffect, useState } from "react";
+
+const WordCycler = ({ words, delays = [], defaultDelay = 2000 }) => {
+  // Create an extended array with the first word duplicated at the end
+  const extendedWords = [...words, words[0]];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [currentDelay, setCurrentDelay] = useState(defaultDelay);
+  const [currentHeight, setCurrentHeight] = useState(96); // Default height in px
+
+  // Breakpoint heights
+  const heightMap = {
+    default: 48, // px for base height
+    md: 80,
+    lg: 96,
+  };
+
+  // Function to detect active height based on breakpoint
+  const updateHeight = () => {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      setCurrentHeight(heightMap.lg);
+    } else if (window.matchMedia("(min-width: 768px)").matches) {
+      setCurrentHeight(heightMap.md);
+    } else {
+      setCurrentHeight(heightMap.default);
+    }
+  };
+
+  useEffect(() => {
+    // Set initial height
+    updateHeight();
+
+    // Add event listener to update height on resize
+    window.addEventListener("resize", updateHeight);
+
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, []);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      if (currentIndex === words.length) {
+        // Reached the duplicate word; snap back to the first word instantly
+        setIsTransitioning(false);
+        setCurrentIndex(0);
+
+        // Re-enable transition after snapping back
+        setTimeout(() => setIsTransitioning(true), 50);
+      } else {
+        // Normal cycling
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }
+
+      // Set delay for the next transition
+      const nextDelay = delays[currentIndex + 1] || defaultDelay;
+      setCurrentDelay(nextDelay);
+    }, currentDelay);
+
+    return () => clearTimeout(interval);
+  }, [currentIndex, currentDelay, delays, defaultDelay, words.length]);
+
+  return (
+    <div className="h-12 md:h-20 lg:h-24 overflow-hidden relative text-4xl md:text-5xl lg:text-7xl items-center justify-center text-center font-bold text-indigo-600">
+      <div
+        className={`w-full items-center justify-center ${isTransitioning ? "transition-transform duration-700 ease-in-out" : ""}`}
+        style={{
+          transform: `translateY(-${currentIndex * currentHeight}px)`,
+        }}
+      >
+        {extendedWords.map((word, index) => (
+          <div key={index} className={`h-12 md:h-20 lg:h-24 flex items-center justify-center`}>
+            {word}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WordCycler;

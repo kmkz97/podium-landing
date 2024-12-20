@@ -5,8 +5,8 @@ const FeaturedOn = () => {
     const { t } = useTranslation();
   
     return (
-      <section className='FeaturedOn'>
-        <div className='flex flex-col my-12 w-full items-center justify-center px-16 py-8 text-center'>
+      <section className='FeaturedOn bg-indigo-200 rounded-tl-[78px]'>
+        <div className='flex flex-col w-full items-center justify-center px-16 py-16 text-center'>
             <h2 className='text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('Proudly featured on')}</h2>
             <div className='mt-12 flex w-full flex-wrap items-center justify-center max-w-5xl gap-12'>
                 <svg width="195" height="46" viewBox="0 0 512 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +91,7 @@ const FeaturedOn = () => {
             </div>
             <h2 className='mt-24 text-3xl md:text-4xl lg:text-5xl font-bold text-black'>{t('Create a')} <span className='text-indigo-600'>{t('revolution')}</span><br></br>{t('in your workflow.')}</h2>
             <div className='flex flex-col max-w-96 bg-gray-50 rounded-lg items-center justify-center space-y-6 mt-12 p-8'>
-                <p className='text-2xl leading-8 font-medium text-center'>{t('I absolutely love Podium. It easily saves me over $150 per episode and what used to take hours, literally takes minutes.')}</p>
+                <p className='text-2xl leading-8 font-medium text-center'>{t('I absolutely love Longformer. It easily saves me over $150 per episode and what used to take hours, literally takes minutes.')}</p>
                 <img 
                     src="https://framerusercontent.com/images/gF1UCai096oK5RzbllskSNuEKgU.jpeg?scale-down-to=512" 
                     alt="Derek Gehl Portrait" 

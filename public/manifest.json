@@ -3,17 +3,17 @@
   "name": "Podium: AI tools for creators and podcasters.",
   "icons": [
     {
-      "src": "podium_favicon.svg",
+      "src": "longformer_favicon.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "podium_favicon.svg",
+      "src": "longformer_favicon.svg",
       "type": "image/svg",
       "sizes": "192x192"
     },
     {
-      "src": "podium_favicon.svg",
+      "src": "longformer_favicon.svg",
       "type": "image/svg",
       "sizes": "512x512"
     }

@@ -9,6 +9,8 @@ import Testimonials1 from './Testimonials1';
 import Testimonials2 from './Testimonials2';
 import Faqs from './Faqs';
 import ApiSection from './ApiSection';
+import Clips from './ClipsSection';
+import Calculator from './Calculator';
 
 const Home = () => {
   const featuresRef = useRef(null); // Create a ref for the Features section
@@ -33,12 +35,22 @@ const Home = () => {
       <main>
         <Intro />
         <VideoTestimonials />
-        <div ref={featuresRef}> {/* Attach ref to Features section */}
+        <div className='bg-indigo-200' ref={featuresRef}> {/* Attach ref to Features section */}
           <Features />
         </div>
+        <div className='bg-white'>
+          <Calculator />
+        </div>
+        <div className='bg-gray-200'>
+          <Clips />
+        </div>
         <FeaturedOn />
-        <CTA />
-        <Testimonials1 />
+        <div className='bg-indigo-200'>
+          <CTA />
+        </div>
+        <div className='bg-gray-50'>
+          <Testimonials1 />
+        </div>
         <Faqs />
         <Testimonials2 />
         <CTA />

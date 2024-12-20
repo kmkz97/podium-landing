@@ -68,7 +68,7 @@ const ApiFeatures = () => {
       <section className='Features'>
         <div className='flex flex-col w-full items-center text-center p-8 justify-center'>
             <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl max-w-3xl font-bold text-black'>{t('Conversational AI tuned for your audio.')}</h2>
-            <p className='mt-4 text-xl font-light text-gray-600'>{t("Scale your audio processing pipeline using Podium's API")}</p>
+            <p className='mt-4 text-xl font-light text-gray-600'>{t("Scale your audio processing pipeline using Longformer's API")}</p>
         </div>
         <div className='flex w-full items-center justify-center px-16 py-8 max-w-5xl mx-auto'>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -13,11 +13,11 @@ const APIFAQ = () => {
   const faqs = [
     {
       question: "Who is API access for?",
-      answer: t("API access is for you if you're building an app that requires Podium features, or have some other reason for using Podium in a programmatic way.")
+      answer: t("API access is for you if you're building an app that requires Longformer features, or have some other reason for using Longformer in a programmatic way.")
     },
     {
       question: "Are there any other languages available other than English?",
-      answer: t("Podium can process and generate content in over 90 languages.")
+      answer: t("Longformer can process and generate content in over 90 languages.")
     },
     {
       question: "How much does it cost?",

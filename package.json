@@ -1,6 +1,4 @@
 {
-  "name": "podium-landing",
-  "homepage": "https://kmkz97.github.io/podium-landing/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

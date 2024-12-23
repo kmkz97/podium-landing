@@ -5,7 +5,7 @@ const CTA = () => {
   const { t } = useTranslation();
 
     return (
-      <section className='CTA'>
+      <section className='CTA' style={{ marginTop: '-78px' }}>
         <div className="py-16 bg-gray-50  rounded-tr-[78px] flex flex-col w-full items-center justify-center px-8">
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center text-black">{t('Try Longformer today')}</h2>
         <p className='flex my-8 text-center text-2xl font-light text-gray-600'>{t('Get 3 FREE hours to try Longformer when you sign up')}</p>

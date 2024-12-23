@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import WordCycler from './WordCycler';
 
 const words = ["Customer Calls", "Podcasts", "Videos", "Spiritual Talks", "Educational Lectures", "Meetings"];
-const delays = [500, 2000, 2000, 2000, 2000, 2000, 500];
+const delays = [50, 2000, 2000, 2000, 2000, 2000, 1000];
 
 const Intro = () => {
   const { t } = useTranslation();
@@ -12,10 +12,10 @@ const Intro = () => {
   return (
     <section className="intro">
       <div className="mt-12 mb-4 flex flex-col w-full items-center justify-center p-8">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl text-center font-bold text-black">{t('Create 100x more content from your')}</h1>
-        <WordCycler words={words} delays={delays} defaultDelay={2000} />
+        <h1 className="text-3xl md:text-5xl lg:text-7xl text-center font-bold text-black">{t('Create 100x more content from your')}</h1>
+        <WordCycler words={words} delays={delays} defaultDelay={1000} />
       <p className='flex max-w-96 my-8 text-center text-xl font-light md:font-regular text-gray-600'>{t('Get instant transcript, show notes, clips, chapters and more!')}</p>
-      <div className='flex flex-col items-center justify-center gap-2'>
+      <div className='flex flex-col w-full sm:w-fit items-center justify-center gap-2'>
         <button 
           className='mt-4 flex h-12 w-full sm:w-fit sm:px-8 bg-gradient-to-r from-[#007AFF] to-[#F300FF] text-white font-medium text-xl rounded-lg shadow-[0_0_5px_rgba(98,0,128,0.6)] hover:shadow-[0_0_10px_rgba(98,0,128,0.6)] items-center justify-center'
           onClick={() => window.location.href = 'https://podium.page/create-account'}

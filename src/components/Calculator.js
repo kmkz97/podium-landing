@@ -28,7 +28,7 @@ const Calculator = () => {
   }, [selectedPlan]);
 
   return (
-    <section className="Calculator bg-gray-200 items-center px-[36px] justify-center rounded-tl-[78px]">
+    <section className="Calculator bg-gradient-to-r from-gray-50/20 to-gray-200 items-center px-[36px] pb-24 justify-center rounded-tl-[78px]">
       <div className="flex flex-col w-full items-center text-center p-8 justify-center">
         <p className="mt-8 text-sm md:text-base font-medium text-gray-400">
           {t('CALCULATOR')}

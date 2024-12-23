@@ -6,7 +6,7 @@ const Testimonials2 = () => {
     const { t } = useTranslation();
   
     return (
-        <section className="Testimonials">
+        <section className="Testimonials pb-20">
             <div className="flex flex-col items-center justify-center text-center my-8 p-8">
                 <p className='mt-8 text-sm md:text-base font-medium text-gray-400'>{t('CUSTOMER TESTIMONIALS')}</p>
                 <h2 className='mt-4 text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('More praise from our fans')}</h2>

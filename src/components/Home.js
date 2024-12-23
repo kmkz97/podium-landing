@@ -35,19 +35,15 @@ const Home = () => {
       <main>
         <Intro />
         <VideoTestimonials />
-        <div className='bg-indigo-200' ref={featuresRef}> {/* Attach ref to Features section */}
+        <div ref={featuresRef}> {/* Attach ref to Features section */}
           <Features />
         </div>
         <div className='bg-white'>
           <Calculator />
         </div>
-        <div className='bg-gray-200'>
-          <Clips />
-        </div>
+        <Clips />
         <FeaturedOn />
-        <div className='bg-indigo-200'>
-          <CTA />
-        </div>
+        <CTA />
         <div className='bg-gray-50'>
           <Testimonials1 />
         </div>

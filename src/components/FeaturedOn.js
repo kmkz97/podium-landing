@@ -5,7 +5,7 @@ const FeaturedOn = () => {
     const { t } = useTranslation();
   
     return (
-      <section className='FeaturedOn bg-indigo-200 rounded-tl-[78px]'>
+      <section className='FeaturedOn bg-gradient-to-br from-purple-200/20 to-indigo-500/20 pb-20 rounded-tl-[78px]'>
         <div className='flex flex-col w-full items-center justify-center px-16 py-16 text-center'>
             <h2 className='text-3xl md:text-5xl lg:text-6xl font-bold text-black'>{t('Proudly featured on')}</h2>
             <div className='mt-12 flex w-full flex-wrap items-center justify-center max-w-5xl gap-12'>

@@ -8,6 +8,7 @@ const WordCycler = ({ words, delays = [], defaultDelay = 2000 }) => {
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [currentDelay, setCurrentDelay] = useState(defaultDelay);
   const [currentHeight, setCurrentHeight] = useState(96); // Default height in px
+  const [isSnapping, setIsSnapping] = useState(false); // Detect snap state
 
   // Breakpoint heights
   const heightMap = {
@@ -43,11 +44,15 @@ const WordCycler = ({ words, delays = [], defaultDelay = 2000 }) => {
     const interval = setTimeout(() => {
       if (currentIndex === words.length) {
         // Reached the duplicate word; snap back to the first word instantly
+        setIsSnapping(true); // Set snapping state
         setIsTransitioning(false);
         setCurrentIndex(0);
 
         // Re-enable transition after snapping back
-        setTimeout(() => setIsTransitioning(true), 50);
+        setTimeout(() => {
+          setIsSnapping(false);
+          setIsTransitioning(true);
+        }, 50);
       } else {
         // Normal cycling
         setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -62,18 +67,38 @@ const WordCycler = ({ words, delays = [], defaultDelay = 2000 }) => {
   }, [currentIndex, currentDelay, delays, defaultDelay, words.length]);
 
   return (
-    <div className="h-12 md:h-20 lg:h-24 overflow-hidden relative text-4xl md:text-5xl lg:text-7xl items-center justify-center text-center font-bold text-indigo-600">
+    <div className="h-12 md:h-20 lg:h-24 overflow-hidden relative text-3xl md:text-5xl lg:text-7xl items-center justify-center text-center font-bold text-indigo-600">
       <div
         className={`w-full items-center justify-center ${isTransitioning ? "transition-transform duration-700 ease-in-out" : ""}`}
         style={{
           transform: `translateY(-${currentIndex * currentHeight}px)`,
         }}
       >
-        {extendedWords.map((word, index) => (
-          <div key={index} className={`h-12 md:h-20 lg:h-24 flex items-center justify-center`}>
-            {word}
-          </div>
-        ))}
+        {extendedWords.map((word, index) => {
+          // Disable opacity transition during snapping
+          const transitionStyle = isSnapping ? {} : { transition: "opacity 0.5s ease-in-out" };
+
+          // Calculate opacity: fully opaque for currentIndex, fading for others
+          const opacity =
+            index === currentIndex
+              ? 1
+              : index === currentIndex - 1 || index === currentIndex + 1
+              ? 0.1
+              : 0;
+
+          return (
+            <div
+              key={index}
+              className={`h-12 md:h-20 lg:h-24 flex items-center justify-center`}
+              style={{
+                ...transitionStyle,
+                opacity,
+              }}
+            >
+              {word}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

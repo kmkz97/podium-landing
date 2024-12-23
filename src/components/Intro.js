@@ -61,7 +61,7 @@ const Intro = () => {
         </div>
         <div className='mt-8 mx-auto px-4 hidden md:flex max-w-5xl'>
             <img
-                src="https://framerusercontent.com/images/BJ0bLozu94JBYTZN7vC72Abzg0.svg"
+                src="https://framerusercontent.com/images/XEmv5vqoiWWArC0PPHNUalrY10U.svg"
                 alt="Podium dashboard interface"
             />
         </div>
